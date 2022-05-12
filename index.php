@@ -45,12 +45,4 @@
         </article>
     </main>
 </body>
-
-</head>
-
-<body>
-    <nav>
-    </nav>
-</body>
-
 </html>

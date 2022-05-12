@@ -9,13 +9,4 @@
 <body>
     
 </body>
-
-</head>
-
-<body>
-<h1>gaming</h1>
-<nav>
-</nav>
-</body>
-
 </html>

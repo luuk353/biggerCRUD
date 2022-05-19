@@ -10,9 +10,10 @@
 ul.menu {
     display: inline-block;
     list-style-type: none;
+    
 }
 li.menu_list {
-    height: 85px;
+    height: 190px;
     width: 85px;
     position: relative;
 }
@@ -21,8 +22,8 @@ a.side {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 86px;
-    width: 100%;
+    height: 190px;
+    width: 85px;
     padding: 30px;
     position: absolute;
     top: 0;
@@ -62,20 +63,20 @@ li.menu_list:hover .front {
     text-align: center;
 }
 header{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     width: 100%;
-    height: 10vh;
+    height: 95px;
     z-index: 1;
     display: flex;
     justify-content: center;
+    background-color: darkblue;
 }
 
 footer{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     width: 100%;
-    height:10vh;
+    height:94px;
     display: flex;
     justify-content: center;
+    background-color:darkblue;
 }
 
 main{
@@ -83,8 +84,8 @@ main{
     align-content: center;
     display: flex;
     width: 100%;
-    min-height: 80vh;
-    background-color: aqua;
+    height:80vh;
+    background-color:#B9C8EF;
 }
 
 nav{

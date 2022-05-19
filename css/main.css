@@ -13,7 +13,7 @@ ul.menu {
     
 }
 li.menu_list {
-    height: 190px;
+    height: 151px;
     width: 85px;
     position: relative;
 }
@@ -22,7 +22,7 @@ a.side {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 190px;
+    height: 151px;
     width: 85px;
     padding: 30px;
     position: absolute;
@@ -64,7 +64,7 @@ li.menu_list:hover .front {
 }
 header{
     width: 100%;
-    height: 95px;
+    height: 75px;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -73,7 +73,7 @@ header{
 
 footer{
     width: 100%;
-    height:94px;
+    height: 75px;
     display: flex;
     justify-content: center;
     background-color:darkblue;
@@ -98,16 +98,15 @@ nav{
     padding-bottom: 2px;
     display: flex;
     width: 100%;
-    height: 344px;
     background-color: plum;
 }
 
 form{
+    margin-right: 85px;
     border-radius: 50px;
     align-items: center;
     display: flex;
     width: 30%;
-    height: 300px;
     flex-direction: column;
     background-color: yellow;
 }

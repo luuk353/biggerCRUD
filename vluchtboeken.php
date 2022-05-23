@@ -13,8 +13,35 @@
     <?php include("phpincludes/headertemplate.php")?>
     <main>
         <?php include ("phpincludes/navbar.php")?>
-        <div class ="container1">
-            <p>container</p>
+        <div class="contentblok2">
+            <div class="container-vluchtboeken">
+                <div class="container1">
+                    <p>container</p>
+                </div>
+                <div class="container1">
+                    <p>container</p>
+                </div>
+                <div class="container1">
+                    <p>container</p>
+                </div>
+                <div class="container1">
+                    <p>container</p>
+                </div>
+            </div>
+            <div class="container-vluchtboeken2">
+                <div class="container1">
+                    <p>container</p>
+                </div>
+                <div class="container1">
+                    <p>container</p>
+                </div>
+                <div class="container1">
+                    <p>container</p>
+                </div>
+                <div class="container1">
+                    <p>container</p>
+                </div>
+            </div>
         </div>
     </main>
     <?php include("phpincludes/footertemplate.php")?>

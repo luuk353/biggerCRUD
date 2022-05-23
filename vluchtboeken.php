@@ -15,32 +15,16 @@
         <?php include ("phpincludes/navbar.php")?>
         <div class="contentblok2">
             <div class="container-vluchtboeken">
-                <div class="container1">
-                    <p>container</p>
-                </div>
-                <div class="container1">
-                    <p>container</p>
-                </div>
-                <div class="container1">
-                    <p>container</p>
-                </div>
-                <div class="container1">
-                    <p>container</p>
-                </div>
+                <?php include ("phpincludes/reistemplate.php")?>
+                <?php include ("phpincludes/reistemplate.php")?>
+                <?php include ("phpincludes/reistemplate.php")?>
+                <?php include ("phpincludes/reistemplate.php")?>
             </div>
             <div class="container-vluchtboeken2">
-                <div class="container1">
-                    <p>container</p>
-                </div>
-                <div class="container1">
-                    <p>container</p>
-                </div>
-                <div class="container1">
-                    <p>container</p>
-                </div>
-                <div class="container1">
-                    <p>container</p>
-                </div>
+                <?php include ("phpincludes/reistemplate.php")?>
+                <?php include ("phpincludes/reistemplate.php")?>
+                <?php include ("phpincludes/reistemplate.php")?>
+                <?php include ("phpincludes/reistemplate.php")?>
             </div>
         </div>
     </main>

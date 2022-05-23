@@ -28,6 +28,7 @@
         </article>
     </main>
     <?php include("phpincludes/footertemplate.php")?>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

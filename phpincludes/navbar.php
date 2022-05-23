@@ -6,7 +6,7 @@
                 </li>
                 <li class="menu_list">
                     <span class="front fas fa-info"></span>
-                    <a href="#" class="side">over ons</a>
+                    <a href="overons.php" class="side">over ons</a>
                 </li>
                 <li class="menu_list">
                     <span class="front fas fa-briefcase"></span>

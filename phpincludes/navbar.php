@@ -10,7 +10,7 @@
                 </li>
                 <li class="menu_list">
                     <span class="front fas fa-briefcase"></span>
-                    <a href="#" class="side">Vlucht boeken</a>
+                    <a href="vluchtboeken.php" class="side">Vlucht boeken</a>
                 </li>
                 <li class="menu_list">
                     <span class="front fas fa-paper-plane"></span>

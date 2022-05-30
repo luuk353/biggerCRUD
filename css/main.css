@@ -14,7 +14,7 @@ ul.menu {
 }
 
 li.menu_list {
-    height: 151px;
+    height: 196px;
     width: 85px;
     position: relative;
 }
@@ -24,7 +24,7 @@ a.side {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 151px;
+    height: 196px;
     width: 85px;
     padding: 30px;
     position: absolute;

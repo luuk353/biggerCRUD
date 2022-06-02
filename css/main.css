@@ -287,3 +287,21 @@ input[type=submit]:hover {
     height: 10%;
     background-color: #45a049;
 }
+#pic{
+    height:250px;
+    width:200px;
+}
+
+.stukje-eronder2{
+    display:flex;
+    flex-direction:row;
+    background-color:#A2CCE7;
+    border-radius: 10px;
+    margin-top:10px;
+}
+
+.stukje-eronder3{
+    display:column;
+    flex-direction:row;
+    text-align:center;    
+}

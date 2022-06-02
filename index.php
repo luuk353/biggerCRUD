@@ -14,7 +14,7 @@
 
 <body>
     <?php include("phpincludes/headertemplate.php")?>
-    <main>
+    <main id="main-homepage">
         <?php include ("phpincludes/navbar.php")?>
         <div class="homepage-blok">
             <div class="homepage-contentblok">
@@ -24,8 +24,17 @@
                     Bestemmingen
                 </h1>
             </div>
+            
             <div class ="home-pageblok">
+                <div id="slideshow">
+                    <div class="vakantie-blok">
+                        <p>vakantie1</p>
+                    </div>
 
+                    <div class="vakantie-blok">
+                        <p>vakantie2</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

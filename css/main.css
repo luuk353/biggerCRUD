@@ -239,7 +239,7 @@ input[type=submit]:hover {
     transition: top 0.3s;
 }
 
-.homepage-blok{
+.homepage-blok{ 
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -249,6 +249,7 @@ input[type=submit]:hover {
 }
 
 .homepage-contentblok{
+    border-radius: 15px;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -258,8 +259,8 @@ input[type=submit]:hover {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-top: 6%;
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
     background-color: #45a049;
 }
 
@@ -270,7 +271,25 @@ input[type=submit]:hover {
 }
 
 .home-pageblok{
-    width: 60%;
-    height: 10%;
+    border-radius: 15px;
+    margin: 15px;
+    width: 80%;
+    height: 80%;
     background-color: #45a049;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+#main-homepage{
+    width: 100%;
+    height: 150vh;
+}
+
+.vakantie-blok{
+    width: 100%;
+    height: 100%;
+}
+
+

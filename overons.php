@@ -23,6 +23,14 @@
                     <p> Bepis Travels© is a modern travel company that provides customers with a new sort of travel
                         experience.</p>
                 </div>
+                <div class="overons-stukjetekst1">
+                    <h1>
+                        workinworkingworking
+                    </h1>
+                    <p>
+                        BEPISSTYLINGBEPISSTYLING
+                    </p>
+                </div>
             </div>
         </main>
         <?php include("phpincludes/footertemplate.php")?>

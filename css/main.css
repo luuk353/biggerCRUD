@@ -39,6 +39,7 @@ li.menu_list .front {
     color: #A2CCE7;
     transform-origin: 0 0;
 }
+
 a.side {
     background-color: #A2CCE7;
     color: #34465d;
@@ -98,7 +99,7 @@ nav {
     width: 100%;
 }
 
-form{
+form {
     margin-right: 85px;
     border-radius: 50px;
     align-items: center;
@@ -132,17 +133,17 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
-  }
+}
 
-.container1{
+.container1 {
     border-radius: 15px;
     width: 15%;
     height: 100%;
     background-color: rgba(67, 67, 67, 0.799);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-  }
-  
-.contentblok2{
+}
+
+.contentblok2 {
     padding-top: 10px;
     justify-content: space-evenly;
     padding-bottom: 2px;
@@ -151,7 +152,7 @@ input[type=submit]:hover {
     /* background-color: plum; */
 }
 
-.container-vluchtboeken{
+.container-vluchtboeken {
     margin-top: 1%;
     justify-content: space-around;
     display: flex;
@@ -160,7 +161,7 @@ input[type=submit]:hover {
     /* background-color: purple; */
 }
 
-.container-vluchtboeken2{
+.container-vluchtboeken2 {
     margin-top: 1%;
     display: flex;
     justify-content: space-around;
@@ -168,6 +169,7 @@ input[type=submit]:hover {
     height: 45%;
     /* background-color: green; */
 }
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -175,52 +177,54 @@ input[type=submit]:hover {
     height: 100%;
     width: 100%;
 }
-.about-us-title{
+
+.about-us-title {
     text-align: center;
-    background-color: #A2CCE7 ;
+    background-color: #A2CCE7;
     border-radius: 10px;
-    padding:10px;
-    margin-top:10px;
-}
-.about-us-text{
-    background-color:#A2CCE7;
-    text-align: center;
-    background-color: #A2CCE7 ;
-    border-radius: 10px;
-    padding:10px;    
-    margin-top:10px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
-.fototemplatebox{
+.about-us-text {
+    background-color: #A2CCE7;
+    text-align: center;
+    background-color: #A2CCE7;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.fototemplatebox {
     border-radius: 15px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     height: 50%;
 }
 
-.fototemplate{
+.fototemplate {
     border-radius: 15px;
     width: 100%;
     height: 100%;
 }
 
-.tekstvakreistemplate{
+.tekstvakreistemplate {
     height: 30%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
-.buttontemplate{
+.buttontemplate {
     background-color: #FFFC00;
     width: 90%;
     height: 40%;
 }
 
-.buttontemplate:hover{
+.buttontemplate:hover {
     cursor: pointer;
     background-color: #fffb007e;
 }
 
-.templateboekknop{
+.templateboekknop {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -239,7 +243,18 @@ input[type=submit]:hover {
     transition: top 0.3s;
 }
 
-.homepage-blok{ 
+ 
+
+
+.overons-stukjetekst1 {
+    background-color: #A2CCE7;
+    text-align: center;
+    background-color: #A2CCE7;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.homepage-blok{
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -278,6 +293,7 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -292,4 +308,21 @@ html{
     height: 100%;
 }
 
+#pic{
+    height:250px;
+    width:200px;
+}
 
+.stukje-eronder2{
+    display:flex;
+    flex-direction:row;
+    background-color:#A2CCE7;
+    border-radius: 10px;
+    margin-top:10px;
+}
+
+.stukje-eronder3{
+    display:column;
+    flex-direction:row;
+    text-align:center;    
+}

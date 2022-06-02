@@ -15,15 +15,27 @@
         <?php include("phpincludes/headertemplate.php")?>
         <main>
             <?php include ("phpincludes/navbar.php")?>
+
             <div class="about-container">
+
                 <div class="about-us-title">
                     <h1>About Bepis Travels©</h1>
                 </div>
-                <div class=" about-us-text">
+                <!-- <div class=" about-us-text">
                     <p> Bepis Travels© is a modern travel company that provides customers with a new sort of travel
                         experience.</p>
-                </div>
+                </div> -->
+              
+                    <div class="stukje-eronder2">
+                        <img id="pic" src="img/cat+looking+out+of+plane.png" alt="fuck its not working">
+                        <div class="stukje-eronder3">
+                            <h2>over bepis travels</h2>
+                            <p>aboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutabout
+                            </p>
+                        </div>
+                    </div>
             </div>
+
         </main>
         <?php include("phpincludes/footertemplate.php")?>
     </body>

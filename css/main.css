@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 ul.menu {
     margin-top: 100px;
     display: inline-block;
@@ -24,7 +22,7 @@ a.side {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 196px;
+    height: 21vh;
     width: 85px;
     padding: 30px;
     position: absolute;
@@ -57,17 +55,7 @@ li.menu_list:hover .front {
     transform: rotateY(90deg);
 }
 
-#maintext {
-    text-align: center;
-}
 
-#maininfo {
-    text-align: center;
-}
-
-#sideinfo {
-    text-align: center;
-}
 
 header {
     width: 100%;
@@ -255,6 +243,7 @@ input[type=submit]:hover {
     transition: top 0.3s;
 }
 
+
 .overons-stukjetekst1 {
     background-color: #A2CCE7;
     text-align: center;
@@ -262,4 +251,39 @@ input[type=submit]:hover {
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
+}
+.homepage-blok{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.homepage-contentblok{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url('https://wallpaperaccess.com/full/7158839.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 6%;
+    width: 60%;
+    height: 60%;
+    background-color: #45a049;
+}
+
+#homepage-text{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+}
+
+.home-pageblok{
+    width: 60%;
+    height: 10%;
+    background-color: #45a049;
 }

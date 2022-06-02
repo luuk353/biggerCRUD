@@ -7,25 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <?php include("phpincludes/headertemplate.php")?>
     <main>
         <?php include ("phpincludes/navbar.php")?>
+        <div class="homepage-blok">
+            <div class="homepage-contentblok">
+                <h1 id="homepage-text">
+                    De zonnigste
+                    <br>
+                    Bestemmingen
+                </h1>
+            </div>
+            <div class ="home-pageblok">
 
-        <h1 id="maintext">placeholder name</h1>
-
-
-        <article id="maininfo">
-            <h2>ik weet niett</h2>
-            <p>Jug phd speed</p>
-        </article>
-
-        <article id="sideinfo">
-            <h3>xdd</h3>
-            <p> xddd </p>
-        </article>
+            </div>
+        </div>
     </main>
     <?php include("phpincludes/footertemplate.php")?>
     <script src="js/main.js"></script>

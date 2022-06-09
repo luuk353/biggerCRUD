@@ -33,16 +33,32 @@
             <div class ="home-pageblok">
                 <div id="slideshow">
                     <div class="vakantie-blok">
-                        <div class="vakantieblok-foto">
-                        
-                        </div class="vakantieblok-tekst">
-                        <div>
-
+                        <div class="blok1">
+                            <img id = "vakantieimg" src="img/vakantie.jpg" alt="">
+                            <div class = "vakantietekst">
+                                <p class ="tekstvakantie">een mooie vakantie</p>
+                            </div>
+                        </div>
+                        <div class = "blok2">
+                        <img id = "vakantieimg2" src="img/glijbaaan.jpg" alt="">
+                            <div class = "vakantietekst">
+                                <p class ="tekstvakantie">nog een mooie vakantie</p>
+                            </div>
                         </div>
                     </div>
-
                     <div class="vakantie-blok">
-                        <p>vakantie2</p>
+                        <div class="blok1">
+                            <img id = "vakantieimg" src="img/mooievakantie.jpg" alt="">
+                            <div class = "vakantietekst">
+                                <p class ="tekstvakantie">een mooie vakantie</p>
+                            </div>
+                        </div>
+                        <div class = "blok2">
+                        <img id = "vakantieimg2" src="img/glijbaaan.jpg" alt="">
+                            <div class = "vakantietekst">
+                                <p class ="tekstvakantie">nog een mooie vakantie</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -28,7 +28,12 @@
             <div class ="home-pageblok">
                 <div id="slideshow">
                     <div class="vakantie-blok">
-                        <p>vakantie1</p>
+                        <div class="vakantieblok-foto">
+                        
+                        </div class="vakantieblok-tekst">
+                        <div>
+
+                        </div>
                     </div>
 
                     <div class="vakantie-blok">
@@ -39,7 +44,13 @@
         </div>
     </main>
     <?php include("phpincludes/footertemplate.php")?>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/slideshow.js"></script>
+    
+
 </body>
 
 </html>

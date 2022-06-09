@@ -4,7 +4,7 @@ setInterval(() => {
     $('#slideshow > div:first')
         .fadeOut(0)
         .next()
-        .fadeIn(600)
+        .fadeIn(800)
         .end()
         .appendTo('#slideshow');
-}, 2000);
+}, 5000);

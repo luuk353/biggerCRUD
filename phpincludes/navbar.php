@@ -16,5 +16,9 @@
                     <span class="front fas fa-paper-plane"></span>
                     <a href="contact.php" class="side">contact</a>
                 </li>
+                <li class="menu_list">
+                    <span class="front fas fa-paper-plane"></span>
+                    <a href="login.php" class="side">log in</a>
+                </li>
             </ul>
         </nav>

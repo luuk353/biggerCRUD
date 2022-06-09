@@ -12,7 +12,7 @@ ul.menu {
 }
 
 li.menu_list {
-    height: 196px;
+    height: 143px;
     width: 85px;
     position: relative;
 }
@@ -347,4 +347,10 @@ html{
     width: 50%;
     height: 100%;
     background-color: #FFFC00;
+}
+#formulier {
+    background-color: #7d94b5;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
 }

@@ -1,3 +1,8 @@
+<?php
+    include_once('phpincludes/connect.php');
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

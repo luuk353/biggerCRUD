@@ -335,7 +335,8 @@ html{
 .stukje-eronder3{
     display:column;
     flex-direction:row;
-    text-align:center;    
+    text-align:center;
+    width: 100vh;    
 }
 
 #pijlknop{

@@ -1,5 +1,5 @@
 <?php
-    include_once('phpincludes/connect.php');
+    // include_once('phpincludes/connect.php');
     session_start();
 ?>
 
@@ -20,7 +20,10 @@
 <body>
     <?php include("phpincludes/headertemplate.php")?>
     <main id="main-homepage">
-        <?php include ("phpincludes/navbar.php")?>
+        <div class = "navbarfix">
+            <?php include ("phpincludes/navbar.php")?>
+            <!-- <div class = "opvulling"></div> -->
+        </div>
         <div class="homepage-blok">
             <div class="homepage-contentblok">
                 <h1 id="homepage-text">
@@ -48,13 +51,13 @@
                     </div>
                     <div class="vakantie-blok">
                         <div class="blok1">
-                            <img id = "vakantieimg" src="img/mooievakantie.jpg" alt="">
+                            <img id = "vakantieimg" src="img/mooievakantie.png" alt="">
                             <div class = "vakantietekst">
                                 <p class ="tekstvakantie">een mooie vakantie</p>
                             </div>
                         </div>
                         <div class = "blok2">
-                        <img id = "vakantieimg2" src="img/glijbaaan.jpg" alt="">
+                        <img id = "vakantieimg2" src="img/spanjepart200.jpg" alt="">
                             <div class = "vakantietekst">
                                 <p class ="tekstvakantie">nog een mooie vakantie</p>
                             </div>

@@ -34,7 +34,7 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
-
+<!-- <a href = "admin.php"> adminpage</a> -->
     </main>
     <?php include("phpincludes/footertemplate.php")?>
 </body>

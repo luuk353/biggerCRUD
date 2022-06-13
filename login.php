@@ -11,7 +11,7 @@
 <body>
     <main>
     <?php include ("phpincludes/navbar.php")?>
-<form name ="form" id="formulier" action="php/loginvalidate.php" method="post">
+<form name ="form" id="formulier" action="phpincludes/loginvalidate.php" method="post">
             <P>log hier in: </P><br>
             <input type="text" name="username" placeholder="username" ><br>
             <p>vul je wachtwoord in:</p><br>
@@ -21,5 +21,6 @@
         </form>
 </main>
 <?php include("phpincludes/footertemplate.php")?>
+<script src="js/inlog.js"></script>
 </body>
 </html>

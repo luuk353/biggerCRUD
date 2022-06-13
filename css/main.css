@@ -15,6 +15,14 @@ li.menu_list {
     height: 143px;
     width: 85px;
     position: relative;
+    background-color: #B9C8EF;
+}
+
+.opvulling{
+    position: absolute;
+    height: 143px;
+    width: 85px;
+    background-color: #B9C8EF;
 }
 
 li.menu_list .front,
@@ -22,7 +30,7 @@ a.side {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 21vh;
+    height: 153%;
     width: 85px;
     padding: 30px;
     position: absolute;
@@ -38,7 +46,9 @@ li.menu_list .front {
     background-color: #B9C8EF;
     color: #A2CCE7;
     transform-origin: 0 0;
+    
 }
+
 
 a.side {
     background-color: #A2CCE7;
@@ -54,8 +64,6 @@ li.menu_list:hover a.side {
 li.menu_list:hover .front {
     transform: rotateY(90deg);
 }
-
-
 
 header {
     width: 100%;
@@ -100,8 +108,9 @@ nav {
 }
 
 form {
+    margin: 15px;
     margin-right: 85px;
-    border-radius: 50px;
+    border-radius: 30px;
     align-items: center;
     display: flex;
     width: 30%;
@@ -254,13 +263,16 @@ input[type=submit]:hover {
     padding: 10px;
     margin-top: 10px;
 }
+
+
 .homepage-blok{
+    /* background-image:"img/sunnybeach.jpg"; */
     flex-direction: column;
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #62b2b7;
 }
 
 .homepage-contentblok{
@@ -393,9 +405,9 @@ html{
 .blok2{
     margin: 15px;
     width: 50%;
-    height: 50%
-    background-color: #FFFC00;
+    height: 50%;
 }
+
 #formulier {
     background-color: #7d94b5;
     width: 200px;

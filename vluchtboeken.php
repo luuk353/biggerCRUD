@@ -16,14 +16,8 @@
         <div class="contentblok2">
             <div class="container-vluchtboeken">
                 <?php include ("phpincludes/reistemplate.php")?>
-                <?php include ("phpincludes/reistemplate.php")?>
-                <?php include ("phpincludes/reistemplate.php")?>
-                <?php include ("phpincludes/reistemplate.php")?>
             </div>
             <div class="container-vluchtboeken2">
-                <?php include ("phpincludes/reistemplate.php")?>
-                <?php include ("phpincludes/reistemplate.php")?>
-                <?php include ("phpincludes/reistemplate.php")?>
                 <?php include ("phpincludes/reistemplate.php")?>
             </div>
         </div>

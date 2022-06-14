@@ -26,30 +26,38 @@ session_start();
     <main id ="admin-main">
         <div class="admin-powers">
             <form action="php/create.php" method="post" id="admin-add">
-                <P>vul hier de naam in van wat je wilt toevoegen </P><br>
-                <input type="text" name="titel" placeholder="titel"><br>
-                <p>vul de prijs in</p><br>
-                <input type="text" name="prijs" placeholder="prijs"><br>
-                <p>geef een beschrijving</p><br>
-                <input type="text" name="beschrijving" placeholder="beschrijving"><br>
+                <P>vul hier de naam in van wat je wilt toevoegen </P>
+                <input type="text" name="hotel" placeholder="hotelnaam"><br>
+                <p> vul de begindatum in </p>
+                <input type="text" name="begindatum" placeholder="begindatum"><br>
+                <p> vul de einddatum in </p>
+                <input type="text" name="einddatum" placeholder="einddatum"><br>
+                <p> geef de prijs aan </p>
+                <input type="text" name="hotel_prijs" placeholder="prijs"><br>
+                <p> vul de beoordeling in (aantal sterren)</p>
+                <input type="text" name="sterren" placeholder="beoordeling"><br>
                 <input type="submit" name="submit" placeholder="submit"><br>
             </form>
             <form action="php/update.php" method="post" id="admin-update">
                 <p>vul hier het ID in van wat je wilt aanpassen</p>
-                <input type="text" name="id" placeholder="ID">
-                <P>vul hier de naam in </P><br>
-                <input type="text" name="titel" placeholder="titel"><br>
-                <p>vul de prijs in</p><br>
-                <input type="text" name="prijs" placeholder="prijs"><br>
-                <p>geef een beschrijving</p><br>
-                <input type="text" name="beschrijving" placeholder="beschrijving"><br>
+                <input type="text" name="reisid" placeholder="ID">
+                <P>vul hier de naam in </P>
+                <input type="text" name="hotel" placeholder="hotelnaam"><br>
+                <p>vul de begindatum in</p>
+                <input type="text" name="begindatum" placeholder="begindatum"><br>
+                <p> vul de einddatum in</p>
+                <input type="text" name="einddatum" placeholder="eindddatum"><br>
+                <p> geef de prijs aan </p>
+                <input type="text" name="hotel_prijs" placeholder="prijs"><br>
+                <p> vul de beoordeling in (aantal sterren)</p>
+                <input type="text" name="sterren" placeholder="beoordeling"><br>
                 <input type="submit" name="edit" placeholder="edit"><br>
             </form>
 </div>
 <div class = "admin-destroy">
             <form action="php/delete.php" method="post" id="admin-delete">
                 <p>vul hier het ID in van het item dat je wilt deleten</p>
-                <input type="text" name="id" placeholder="ID">
+                <input type="text" name="reisid" placeholder="ID">
                 <input type="submit" name="delete">
             </form>
         </div>
@@ -58,8 +66,10 @@ session_start();
                 <tr>
                     <th>ID</th>
                     <th>titel</th>
+                    <th>begindatum</th>
+                    <th>einddatum</th>
                     <th>prijs</th>
-                    <th>beschrijving</th>
+                    <th>beoordeling</th>
                 </tr>
                 <?php
             $sql = "SELECT * FROM boekingen";

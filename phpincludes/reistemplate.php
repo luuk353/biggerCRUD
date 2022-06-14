@@ -1,46 +1,40 @@
-<?php
-    if (isset($_GET["search"])) {
-    $search = "%".$_GET['search']."%";
+<?php 
+    if(isset($_GET["search"])){
+        $search = "%".$_GET['search']."%";
 
-    $sql = "SELECT * FROM reizen WHERE
-    name LIKE :search";
-    $stmt = $connect -> prepare($sql);
-    $stmt -> bindParam(":search",$search);
-    $stmt -> execute();
+        $sql = "SELECT * FROM reizen WHERE name LIKE :search";
+            $stmt = $connect -> prepare($sql);
+            $stmt -> bindParam(":search", $search);
+        } else {
+            $sql = "SELECT * FROM reizen";
+            $stmt = $connect -> prepare($sql);
+        }
+    
+
+    // $sql = "SELECT * FROM menukaart";
+    // $stmt = $connect -> prepare($sql);
+    $stmt ->execute();
     $result = $stmt -> fetchAll();
-    } else {
-    $sql = "SELECT * FROM reizen";
-    $stmt = $connect -> prepare($sql);
-    $stmt -> execute();
-    $result = $stmt -> fetchAll();
-    }
+
     foreach($result as $res) {
-    }
 ?>
-
-
-
-
-
-
-
 
 
 <div class="container1">
     <div class="fototemplatebox">
-        <img id="fototemplate" src="<?php echo $res['fotolink'] ?>">
+        <img id="fototemplate" src="<?php echo $res['image'] ?>">
     </div>
     <div class="tekstvakreistemplate">
-    <p>datum:<p><?php echo $res["begindatum"]; ?></p><p><?php echo $res["eindatum"]; ?></p></p>
+    <p>datum:<p><?php echo $res["begindatum"]; ?></p><p>-->></p><?php echo $res["einddatum"]; ?></p>
     </div>
     <div class="tekstvakreistemplate">
-    <p>hotel:<p><?php echo $res["hotel"]; ?></p></p>
+    <p>hotel:<p><?php echo $res["hotel"]; ?></p>
     </div>
     <div class="tekstvakreistemplate">
-    <p>prijs:<p><?php echo $res["hotel_prijs"]; ?></p></p>
+    <p>prijs:<p><?php echo $res["hotel_prijs"]; ?></p>
     </div>
     <div class="tekstvakreistemplate">
-    <p>sterren:<p><?php echo $res["sterren"]; ?></p></p>
+    <p>sterren:<p><?php echo $res["sterren"]; ?></p>
     </div>
     <div class="templateboekknop">
         <button class="buttontemplate">
@@ -48,3 +42,7 @@
         </button>
     </div>
 </div>
+
+<?php 
+    }
+?>

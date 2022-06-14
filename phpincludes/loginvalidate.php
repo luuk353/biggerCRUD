@@ -18,7 +18,9 @@ session_start();
     }
     if(isset($_SESSION["admin"]) && $_SESSION["admin"] == '1') {
         header("Location: ../admin.php");
-    } else {
-        header ("location:../index.php");
+    } elseif (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0') 
+    {
+        echo '<script> window.location.href ="../index.php";</script>';
     }
+    
     ?>

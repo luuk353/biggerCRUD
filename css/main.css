@@ -431,3 +431,7 @@ html{
     justify-content: space-evenly;
     width:100%;
 }
+
+h2 {
+    text-align: center;
+}

@@ -29,7 +29,18 @@
                         <img id="pic" src="img/cat+looking+out+of+plane.png" alt="fuck its not working">
                         <div class="stukje-eronder3">
                             <h2>over bepis travels</h2>
-                            <p>aboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutaboutabout
+                            <p>Met heel veel verschillende reisaanbieders onder een dak is Bepis travels al meer dan 5 jaar het grootste onafhankelijke reisbureau van Nederland, maar wat zijn nou de voordelen bij Bepis Travels?<br>   
+                            </p>
+                            <h2><br>Het begon met Coop</h2>
+                            <p>
+                            In 2017 was er een kat genaamd bepis bij de supermarkt coop, klanten zagen de kat zitten. 
+                            niemand gaf de kat aandacht, maar toen kwamen er een paar jongens die gaven de kat aandacht en een naam: “Bepis.”
+                            Vervolgens werden de paar jongens goed bevriend met de kat Bepis, en de rest is geschiedenis 
+                            </p>
+                            <h2><br>Services</h2>
+                            <p>Als u vervoer nodig hebt in het buitenland dan fixen Bepis travels dat zo snel mogelijk!
+                                We hebben altijd reisadviseurs die voor u klaar staan
+                                Wij zoeken voor de beste reis voor u, u bespaart veel tijd en geld  
                             </p>
                         </div>
                     </div>

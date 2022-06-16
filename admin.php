@@ -25,7 +25,7 @@ session_start();
 <a href = "overons.php"> overonsen </a>
     <main id ="admin-main">
         <div class="admin-powers">
-            <form action="php/create.php" method="post" id="admin-add">
+            <form action="phpincludes/create.php" method="post" id="admin-add">
                 <P>vul hier de naam in van wat je wilt toevoegen </P>
                 <input type="text" name="hotel" placeholder="hotelnaam"><br>
                 <p> vul de begindatum in </p>
@@ -36,9 +36,10 @@ session_start();
                 <input type="text" name="hotel_prijs" placeholder="prijs"><br>
                 <p> vul de beoordeling in (aantal sterren)</p>
                 <input type="text" name="sterren" placeholder="beoordeling"><br>
+                <input type = "text" name = "image" placeholder = "IMAGELINK"><br>
                 <input type="submit" name="submit" placeholder="submit"><br>
             </form>
-            <form action="php/update.php" method="post" id="admin-update">
+            <form action="phpincludes/update.php" method="post" id="admin-update">
                 <p>vul hier het ID in van wat je wilt aanpassen</p>
                 <input type="text" name="reisid" placeholder="ID">
                 <P>vul hier de naam in </P>
@@ -51,11 +52,12 @@ session_start();
                 <input type="text" name="hotel_prijs" placeholder="prijs"><br>
                 <p> vul de beoordeling in (aantal sterren)</p>
                 <input type="text" name="sterren" placeholder="beoordeling"><br>
+                <input type = "text" name ="image" placeholder = "IMAGELINK"><br>
                 <input type="submit" name="edit" placeholder="edit"><br>
             </form>
 </div>
 <div class = "admin-destroy">
-            <form action="php/delete.php" method="post" id="admin-delete">
+            <form action="phpincludes/delete.php" method="post" id="admin-delete">
                 <p>vul hier het ID in van het item dat je wilt deleten</p>
                 <input type="text" name="reisid" placeholder="ID">
                 <input type="submit" name="delete">

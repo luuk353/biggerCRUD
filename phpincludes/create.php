@@ -2,14 +2,17 @@
     include_once("connect.php");    
 
     if(isset($_POST["submit"])){
-        $sql = "INSERT INTO menukaart (titel, beschrijving, prijs ) VALUES (:titel, :beschrijving, :prijs)";
+        $sql = "INSERT INTO reizen (hotel, begindatum, einddatum, hotel_prijs, sterren, image ) VALUES (:hotel, :begindatum, :einddatum, :hotel_prijs, :sterren, :image)";
         $stmt = $connect->prepare($sql);
-        $stmt->bindParam(":titel", $_POST["titel"]);
-        $stmt->bindParam(":prijs", $_POST["prijs"]);
-        $stmt->bindParam(":beschrijving", $_POST["beschrijving"]);
+        $stmt->bindParam(":hotel", $_POST["hotel"]);
+        $stmt->bindParam(":begindatum", $_POST["begindatum"]);
+        $stmt->bindParam(":einddatum", $_POST["einddatum"]);
+        $stmt->bindParam(":hotel_prijs", $_POST["hotel_prijs"]);
+        $stmt->bindParam(":sterren", $_POST["sterren"]);
+        $stmt->bindParam(":image", $_POST["image"]);
         $stmt->execute();
     
-        header("Location:../bestel.php");
+        header("Location:../vluchtboeken.php");
         exit();
     }
 

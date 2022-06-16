@@ -3,20 +3,25 @@
 include_once("connect.php");
 
 if(isset($_POST["edit"])){  
-    $sql = "UPDATE bepis_airline
-        SET titel = :titel, prijs = :prijs, beschrijving = :beschrijving
-        WHERE id = :id";
+    $sql = "UPDATE reizen
+        SET reisid = :reisid, hotel = :hotel, begindatum = :begindatum, einddatum= :einddatum, hotel_prijs = :hotel_prijs, sterren = :sterren, image = :image
+        WHERE reisid = :reisid";
     $stmt = $connect->prepare($sql);
-    $stmt->bindParam(":id", $_POST["id"]);
-    $stmt->bindParam(":titel", $_POST["titel"]);
-    $stmt->bindParam(":prijs", $_POST["prijs"]);
-    $stmt->bindParam(":beschrijving", $_POST["beschrijving"]);
+    $stmt->bindParam(":reisid", $_POST["reisid"]);
+    $stmt->bindParam(":hotel", $_POST["hotel"]);
+    $stmt->bindParam(":begindatum", $_POST["begindatum"]);
+    $stmt->bindParam(":einddatum", $_POST["einddatum"]);
+    $stmt->bindParam(":hotel_prijs", $_POST["hotel_prijs"]);
+    $stmt->bindParam(":sterren", $_POST["sterren"]);
+    $stmt->bindParam(":image", $_POST["image"]);
     $stmt->execute();
 
     header("Location: ../vluchtboeken.php");
     exit();
 }
-
+else {
+    header("Location: ../admin.php");
+}
 
 
 ?>

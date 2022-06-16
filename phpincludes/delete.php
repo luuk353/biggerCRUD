@@ -2,13 +2,13 @@
 
 include_once ("connect.php");
 if(isset($_POST["delete"])) {
-        $sql = "DELETE FROM menukaart 
-                WHERE id = :id";
+        $sql = "DELETE FROM reizen
+                WHERE reisid = :reisid";
         $stmt = $connect -> prepare($sql);
-        $stmt -> bindParam(":id", $_POST["id"]);
+        $stmt -> bindParam(":reisid", $_POST["reisid"]);
         $stmt -> execute();
 
-        header("Location: ../bestel.php");
+        header("Location:../vluchtboeken.php");
         exit();
 }
 else {

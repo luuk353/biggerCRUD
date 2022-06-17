@@ -1,5 +1,5 @@
 <?php
-    // include_once('phpincludes/connect.php');
+    include_once('phpincludes/connect.php');
     session_start();
 ?>
 
@@ -39,7 +39,7 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
 ?>
     <?php include("phpincludes/headertemplate.php")?>
     <main id="main-homepage">
-        <div class = "navbarfix">
+        <div class="navbarfix">
             <?php include ("phpincludes/navbar.php")?>
             <!-- <div class = "opvulling"></div> -->
             <?php 
@@ -55,6 +55,35 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
                                 ?>
         </div>
         <div class="homepage-blok">
+            <div class="searchblok">
+                <div class="searchbar">
+
+                    <form id="form" action="index.php" method="get">
+                        <input type="search" id="search" name="search" placeholder="Search...">
+                        <button type="sumbit">Search</button>
+                    </form>
+
+                </div>
+                <?php
+                                if (isset($_GET["search"])) {
+                                    $search = "%".$_GET['search']."%";
+
+                                    $sql = "SELECT * FROM reizen WHERE
+                                    hotel LIKE :search";
+                                    $stmt = $connect -> prepare($sql);
+                                    $stmt -> bindParam(":search", $search);
+                                    $stmt -> execute();
+                                    $result = $stmt -> fetchAll();
+                                } else {
+                                    $sql = "SELECT * FROM reizen";
+                                    $stmt = $connect -> prepare($sql);
+                                    $stmt -> execute();
+                                    $result = $stmt -> fetchAll();
+                                }
+                                    foreach($result as $res) {
+                                ?>
+            </div>
+            <?php } ?>
             <div class="homepage-contentblok">
                 <h1 id="homepage-text">
                     De zonnigste
@@ -62,34 +91,34 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
                     Bestemmingen
                 </h1>
             </div>
-            
-            <div class ="home-pageblok">
+
+            <div class="home-pageblok">
                 <div id="slideshow">
                     <div class="vakantie-blok">
                         <div class="blok1">
-                            <img id = "vakantieimg" src="img/vakantie.jpg" alt="">
-                            <div class = "vakantietekst">
-                                <p class ="tekstvakantie">een mooie vakantie</p>
+                            <img id="vakantieimg" src="img/vakantie.jpg" alt="">
+                            <div class="vakantietekst">
+                                <p class="tekstvakantie">een mooie vakantie</p>
                             </div>
                         </div>
-                        <div class = "blok2">
-                        <img id = "vakantieimg2" src="img/glijbaaan.jpg" alt="">
-                            <div class = "vakantietekst">
-                                <p class ="tekstvakantie">nog een mooie vakantie</p>
+                        <div class="blok2">
+                            <img id="vakantieimg2" src="img/glijbaaan.jpg" alt="">
+                            <div class="vakantietekst">
+                                <p class="tekstvakantie">nog een mooie vakantie</p>
                             </div>
                         </div>
                     </div>
                     <div class="vakantie-blok">
                         <div class="blok1">
-                            <img id = "vakantieimg" src="img/mooievakantie.png" alt="">
-                            <div class = "vakantietekst">
-                                <p class ="tekstvakantie">een mooie vakantie</p>
+                            <img id="vakantieimg" src="img/mooievakantie.png" alt="">
+                            <div class="vakantietekst">
+                                <p class="tekstvakantie">een mooie vakantie</p>
                             </div>
                         </div>
-                        <div class = "blok2">
-                        <img id = "vakantieimg2" src="img/spanjepart200.jpg" alt="">
-                            <div class = "vakantietekst">
-                                <p class ="tekstvakantie">nog een mooie vakantie</p>
+                        <div class="blok2">
+                            <img id="vakantieimg2" src="img/spanjepart200.jpg" alt="">
+                            <div class="vakantietekst">
+                                <p class="tekstvakantie">nog een mooie vakantie</p>
                             </div>
                         </div>
                     </div>
@@ -103,7 +132,7 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slideshow.js"></script>
-    
+
 
 </body>
 

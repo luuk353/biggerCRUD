@@ -16,12 +16,7 @@
     <main>
         <?php include ("phpincludes/navbar.php")?>
         <div class="contentblok2">
-            <div class="container-vluchtboeken">
-                <?php include ("phpincludes/reistemplate.php")?>
-            </div>
-            <div class="container-vluchtboeken2">
-                <?php include ("phpincludes/reistemplate.php")?>
-            </div>
+            <?php include ("phpincludes/reistemplate.php")?>
         </div>
     </main>
     <?php include("phpincludes/footertemplate.php")?>

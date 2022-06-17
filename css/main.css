@@ -26,13 +26,11 @@ li.menu_list {
 }
 
 li.menu_list .front,
-
-
 a.side {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 106%;
+    height: 153%;
     width: 85px;
     padding: 30px;
     position: absolute;
@@ -161,18 +159,17 @@ input[type=submit]:hover {
 
 .container1 {
     border-radius: 15px;
-    /* width: 15%; */
-    height: 450px;
+    width: 15%;
+    height: 100%;
     background-color: rgba(67, 67, 67, 0.799);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
 .contentblok2 {
-    display: flex;
     padding-top: 10px;
     justify-content: space-evenly;
     padding-bottom: 2px;
-    /* height: 100%; */
+    height: 100%;
     width: 100%;
     /* background-color: plum; */
 }
@@ -270,7 +267,12 @@ input[type=submit]:hover {
     transition: top 0.3s;
 }
 
- 
+.searchbar {
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+    margin-top: 100px;
+} 
 
 
 .overons-stukjetekst1 {
@@ -456,49 +458,10 @@ h2 {
     text-align: center;
 }
 
-.info-over-rijzen{
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
+.searchblok {
+    flex-direction: column;
     display: flex;
+    align-items:flex-end;
     width: 100%;
-    height: 100%;
-}
-
-.info-over-rijzen-blok{
-    border-radius: 15px;
-    width: 500px;
-    height: 600px;
-    background-color: white;
-}
-
-.info-foto-styling{
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-    border-radius: 15px;
-    width: 100%;
-    height: 300px;
-}
-
-.info-foto-styling1{
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-    border-radius: 15px;
-    width: 100%;
-    height: 50%;
-}
-
-.info-foto-styling2{
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    border-radius: 15px;
-    width: 100%;
-    height: 50%;
-}
-
-.info-bestemmingen-tekst{
-    font-size: larger;
-    align-items: center;
-    display: flex;
-    margin: 15px;
-    border-radius: 15px;
-    height: 270px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    height: 7%;
 }

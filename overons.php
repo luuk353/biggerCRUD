@@ -42,6 +42,27 @@
                                 We hebben altijd reisadviseurs die voor u klaar staan
                                 Wij zoeken voor de beste reis voor u, u bespaart veel tijd en geld  
                             </p>
+                            <h2><br>Privacy policy</h2>
+                            <p>
+                                Wij waarderen het vertrouwen dat je in ons stelt en dat is voor ons de reden om uiterst zorgvuldig om te gaan met de persoonsgegevens die je aan ons doorgeeft.
+                                Bepis travels respecteert jouw recht op privacy. Met dit beleid informeren wij je over hoe wij met jouw persoonsgegevens omgaan.
+                                Persoonsgegevens zijn alle gegevens die iets vertellen over jou of die we in verband kunnen brengen met jou. In het kader van onze dienstverlening, de verkoop van onze producten of wanneer je op een andere manier contact hebt met Sunweb, leggen wij persoonsgegevens vast. Persoonsgegevens die noodzakelijk zijn voor onze dienstverlening zoals bijvoorbeeld jouw naam, adres, e-mailadres en telefoonnummer. Dergelijke gegevens zijn bijvoorbeeld nodig om een boeking te maken.
+                                Hieronder volgen de persoonsgegevens die wij verwerken onderverdeeld naar het de verschillende doeleinden waartoe wij deze gegevens verzamelen:
+                                Om je reis te kunnen boeken, uitvoeren, factureren en / of je opgegeven voorkeuren en opties te kunnen verzorgen
+                                Om je account (indien beschikbaar) welke is aangemaakt te kunnen onderhouden
+                                Om in geval van calamiteiten jou en de thuisblijver te kunnen bereiken tijdens de reis
+                                Kwaliteitsborging
+                            </p>
+                            <h2><br>Algemene voorwaarden</h2>
+                            <p>
+                            Indien je een boeking maakt, betekent dit dat je akkoord gaat met de ANVR-voorwaarden en de voorwaarden van Bepis travels.
+                            Het is daarom belangrijk dat je deze voorwaarden goed hebt gelezen alvorens de boeking te maken.
+                            Bepis travels gaat er, indien je een verzekering hebt afgesloten, vanuit dat je op de hoogte bent van de verzekeringsvoorwaarden.
+                            Daarnaast gaat Bepis travels ervan uit dat je de reisinformatie op de website hebt gelezen.
+                            Op deze pagina vind je de verschillende voorwaarden die Bepis travels hanteert.
+                            </p>
+                            <br>
+                        </div>
                         </div>
                     </div>
             </div>

@@ -20,5 +20,9 @@
                     <span class="front fas fa-paper-plane"></span>
                     <a href="login.php" class="side">log in</a>
                 </li>
+                <li class="menu_list">
+                    <span class="front fas fa-paper-plane"></span>
+                    <a href="info.php" class="side">info</a>
+                </li>
             </ul>
         </nav>

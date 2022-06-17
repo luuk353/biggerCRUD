@@ -435,6 +435,13 @@ html{
     height: 350px;
     border-radius: 10px;
 }
+#formulier-register {
+    display: flex;
+    justify-content: space-around;
+    background-color: #B9C8EF;
+    height: 450px;
+    border-radius: 10px;
+}
 #admin-main {
     height: 90vh;
     background-image: url("../img/PIZZAMAN.jpg");

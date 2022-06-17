@@ -12,14 +12,14 @@
     <main>
         <?php include ("phpincludes/navbar.php")?>
     <div class="contentblok">
-                <form name ="form" id="formulier" action="phpincludes/loginvalidate.php" method="post">
-                <P>log hier in: </P><br>
+                <form name ="form" id="formulier-register" action="phpincludes/accountcreation.php" method="post">
+                <P>maak hier uw account aan: </P><br>
                 <input type="text" name="username" placeholder="username" ><br>
-                <p>vul je wachtwoord in:</p><br>
+                <p>maak hier uw wachtwoord aan:</p><br>
                 <input type="password" name="password" placeholder="password"><br>
-                <input type="submit" value="submit" name="submit"> <p> nog geen account? klik <a href = "register.php">hier </a> om een account te maken</p><br>
-                <p> wachtwoord vergeten? <a href = "passwordforgotten.php"> hier kunt u uw wachtwoord opnieuw aanvragen! </a> </p>
-                
+                <p> maak hier uw forgotcode aan, BEWAAR DEZE GOED!<br>(maximaal 5 cijfers)</p><br>
+                <input type = "password" name = "forgotcode" placeholder = "forgotcode"> <br>
+                <input type="submit" value="submit" name="submit"> <p> heeft u al een account? klik <a href = "login.php">hier </a>om in te loggen.</p>
     
             </form>
     </div>

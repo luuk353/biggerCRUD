@@ -14,7 +14,8 @@
                 </li>
                 <li class="menu_list">
                     <span class="front fas fa-paper-plane"></span>
-                    <a href="contact.php" class="side">contact</a>
+                    <a href="contact.php" class="side">contact reviews</a>
+                    
                 </li>
                 <li class="menu_list">
                     <span class="front fas fa-paper-plane"></span>

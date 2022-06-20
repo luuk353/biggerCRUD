@@ -115,7 +115,7 @@ form {
     align-items: center;
     display: flex;
     width: 30%;
-    height: 500px;
+    /* height: 500px; */
     flex-direction: column;
     background-color: #B9C8EF;
 }

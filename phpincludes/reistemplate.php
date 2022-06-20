@@ -1,4 +1,5 @@
-<?php 
+<?php
+    session_start();
     if(isset($_GET["search"])){
         $search = "%".$_GET['search']."%";
 
@@ -37,9 +38,9 @@
     <p>sterren:<p><?php echo $res["sterren"]; ?></p>
     </div>
     <div class="templateboekknop">
-        <button class="buttontemplate">
-            <p>boeken!</p>
-        </button>
+        <a href="phpincludes/boeken.php?gebruikerID=<?php echo $_SESSION['gebruikerID']; ?>&reisID=<?php echo $res['reisID']?>" class="buttontemplate">boeken!</a>
+        <!-- <button type="submit" name="submit" value="Submit" action="phpincludes/boeken.php" class="buttontemplate">
+        </button> -->
     </div>
 </div>
 

@@ -58,7 +58,7 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
             <div class="searchblok">
                 <div class="searchbar">
 
-                    <form id="form" action="index.php" method="get">
+                    <form id="form" action="vluchtboeken.php" method="get">
                         <input type="search" id="search" name="search" placeholder="Search...">
                         <button type="sumbit">Search</button>
                     </form>
@@ -82,8 +82,9 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
                                 }
                                     foreach($result as $res) {
                                 ?>
+                                <h3><?php echo $res['hotel']; ?></h3>
+                <?php } ?>
             </div>
-            <?php } ?>
             <div class="homepage-contentblok">
                 <h1 id="homepage-text">
                     De zonnigste

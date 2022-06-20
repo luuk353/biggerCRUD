@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
     include_once("connect.php");
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -11,7 +11,8 @@ session_start();
 
         foreach($result as $res)  { 
             if($_POST["password"] == $res["password"]) {
-                $_SESSION["admin"] = $res ["admin"];
+                $_SESSION['gebruikerID'] = $res['gebruikerID'];
+                $_SESSION["admin"] = $res["admin"];
                 break;
             }
         }

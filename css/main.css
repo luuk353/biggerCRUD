@@ -226,6 +226,9 @@ input[type=submit]:hover {
 }
 
 .buttontemplate {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     background-color: #FFFC00;
     width: 90%;
     height: 40%;

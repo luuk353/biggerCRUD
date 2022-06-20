@@ -14,24 +14,32 @@
     <main>
         <?php include ("phpincludes/navbar.php")?>
         <div class="contentblok">
-            <form>
+            <form action="phpincludes/contactform.php" method="post">
+                <h1>contact</h1>
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="fname" name="naam" placeholder="Your name..">
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
+                <label for="lname">your email</label>
+                <input type="text" id="lname" name="email" placeholder="Your e-mail">
 
                 <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="subject" name="bericht" placeholder="Write something"style="height:200px"></textarea>
 
-                <input type="submit" value="Submit">
+                <input type="submit" name="submit" value="Submit">
+            </form>
+
+            <form action="phpincludes/review.php" method="post">
+                <h1>review</h1>
+                <label for="fname">gebruiker</label>
+                <input type="text" id="fname" name="gebruiker" placeholder="Your name..">
+
+                <label for="lname">bericht</label>
+                <input type="text" id="lname" name="bericht" placeholder="Your last name..">
+
+                <label for="subject">sterren</label>
+                <textarea id="subject" name="sterren" placeholder="Write something.."></textarea>
+
+                <input type="submit" name="submit" value="Submit">
             </form>
         </div>
 <!-- <a href = "admin.php"> adminpage</a> -->

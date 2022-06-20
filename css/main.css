@@ -110,12 +110,14 @@ nav {
 }
 
 form {
+    justify-content: center;
     margin: 15px;
     margin-right: 85px;
     border-radius: 30px;
     align-items: center;
     display: flex;
     width: 30%;
+    height: 500px;
     flex-direction: column;
     background-color: #B9C8EF;
 }

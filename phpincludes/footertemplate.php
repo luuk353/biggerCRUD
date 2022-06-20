@@ -1,3 +1,3 @@
 <footer>
-    <h1>footer</h1>
+    <a href = 'myaccount.php'> mijn account </a>
 </footer>

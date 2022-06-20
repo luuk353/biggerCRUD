@@ -14,7 +14,7 @@
     <main>
         <?php include ("phpincludes/navbar.php")?>
         <div class="contentblok">
-            <form action="phpincludes/contactform.php" method="post">
+            <form class="contact-reviewform" action="phpincludes/contactform.php" method="post">
                 <h1>contact</h1>
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="naam" placeholder="Your name..">
@@ -28,7 +28,7 @@
                 <input type="submit" name="submit" value="Submit">
             </form>
 
-            <form action="phpincludes/review.php" method="post">
+            <form class="contact-reviewform" action="phpincludes/review.php" method="post">
                 <h1>review</h1>
                 <label for="fname">gebruiker</label>
                 <input type="text" id="fname" name="gebruiker" placeholder="Your name..">

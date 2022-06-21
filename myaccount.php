@@ -23,6 +23,20 @@
     <?php include("phpincludes/headertemplate.php")?>
     <main>
         <?php include ("phpincludes/navbar.php")?>
+        <?php 
+        $sql = "SELECT * FROM gebruikers";
+        $stmt = $connect -> prepare ($sql);
+        $stmt -> execute();
+        $result = $stmt -> Fetchall();
+        foreach ($result as $res){
+            echo "<td>{$res['username']}</td>";
+        }
+        ?> 
+        <div class = "myaccount">
+            
+            <p> account:<?php echo $res["username"];?> </p>
+        
+</div>
         <div class="contentblok">
             <div class="mijnboekingen">
                 <div class="mijnboekingentabel">

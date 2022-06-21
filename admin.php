@@ -41,7 +41,7 @@ session_start();
             </form>
             <form action="phpincludes/update.php" method="post" id="admin-update">
                 <p>vul hier het ID in van wat je wilt aanpassen</p>
-                <input type="text" name="reisid" placeholder="ID">
+                <input type="text" name="reisID" placeholder="ID">
                 <P>vul hier de naam in </P>
                 <input type="text" name="hotel" placeholder="hotelnaam"><br>
                 <p>vul de begindatum in</p>
@@ -52,7 +52,7 @@ session_start();
                 <input type="text" name="hotel_prijs" placeholder="prijs"><br>
                 <p> vul de beoordeling in (aantal sterren)</p>
                 <input type="text" name="sterren" placeholder="beoordeling"><br>
-                <input type = "text" name ="image" placeholder = "IMAGELINK"><br>
+                <input type = "text" name ="img" placeholder = "IMAGELINK"><br>
                 <input type="submit" name="edit" placeholder="edit"><br>
             </form>
 </div>
@@ -74,17 +74,19 @@ session_start();
                     <th>beoordeling</th>
                 </tr>
                 <?php
-            $sql = "SELECT * FROM boekingen";
+            $sql = "SELECT * FROM reizen";
             $stmt = $connect -> prepare($sql);
             $stmt -> execute();
             $result = $stmt -> fetchAll();
 
             foreach($result as $res) { 
                 echo "<tr>";
-                echo "<td>{$res['id']}</td>";
-                echo "<td>{$res['titel']}</td>";
-                echo "<td>{$res['prijs']}</td>";
-                echo "<td>{$res['beschrijving']}</td>";
+                echo "<td>{$res['reisID']}</td>";
+                echo "<td>{$res['hotel']}</td>";
+                echo "<td>{$res['begindatum']}</td>";
+                echo "<td>{$res['einddatum']}</td>";
+                echo "<td>{$res['hotel_prijs']}</td>";
+                echo "<td>{$res['sterren']}</td>";
                 echo "</tr>";
             }
             ?>

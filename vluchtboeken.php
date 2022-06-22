@@ -12,8 +12,7 @@
 </head>
 
 <body>
-    <?php
-    session_start();    
+    <?php   
     include("phpincludes/headertemplate.php")?>
     <main>
         <?php include ("phpincludes/navbar.php")?>

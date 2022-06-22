@@ -13,7 +13,7 @@
         <?php
         session_start();
         include ("phpincludes/navbar.php")?>
-    <div class="contentblok">
+    <div class="content">
                 <form name ="form" id="formulier-register" action="phpincludes/accountcreation.php" method="post">
                 <P>maak hier uw account aan: </P><br>
                 <input type="text" name="username" placeholder="username" ><br>

@@ -81,6 +81,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: rgb(0, 123, 139);
+    flex-direction: row;
 }
 
 main {
@@ -577,7 +578,7 @@ h2 {
 
 #account-profile{
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     width: auto;
     display: flex;
     height: 100%;

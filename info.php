@@ -11,9 +11,11 @@
 
 <body>
 
-        <?php include("phpincludes/headertemplate.php")?>
+        <?php 
+        session_start();
+        include("phpincludes/headertemplate.php")?>
         <main>
-            <?php include ("phpincludes/navbar.php")?>
+            <?phpinclude ("phpincludes/navbar.php")?>
 
             <div class="about-container">
 

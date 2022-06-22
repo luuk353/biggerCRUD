@@ -15,7 +15,7 @@
         session_start();
         include("phpincludes/headertemplate.php")?>
         <main>
-            <?phpinclude ("phpincludes/navbar.php")?>
+            <?php include ("phpincludes/navbar.php")?>
 
             <div class="about-container">
 

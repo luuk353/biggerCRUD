@@ -60,30 +60,10 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
 
                     <form id="form" action="vluchtboeken.php" method="get">
                         <input type="search" id="search" name="search" placeholder="Search...">
-                        <button type="sumbit">Search</button>
+                        <button type="sumbit" id="search-button">Search</button>
                     </form>
 
                 </div>
-                <?php
-                                if (isset($_GET["search"])) {
-                                    $search = "%".$_GET['search']."%";
-
-                                    $sql = "SELECT * FROM reizen WHERE
-                                    hotel LIKE :search";
-                                    $stmt = $connect -> prepare($sql);
-                                    $stmt -> bindParam(":search", $search);
-                                    $stmt -> execute();
-                                    $result = $stmt -> fetchAll();
-                                } else {
-                                    $sql = "SELECT * FROM reizen";
-                                    $stmt = $connect -> prepare($sql);
-                                    $stmt -> execute();
-                                    $result = $stmt -> fetchAll();
-                                }
-                                    foreach($result as $res) {
-                                ?>
-                                <h3><?php echo $res['hotel']; ?></h3>
-                <?php } ?>
             </div>
             <div class="homepage-contentblok">
                 <h1 id="homepage-text">

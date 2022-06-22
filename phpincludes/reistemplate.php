@@ -3,7 +3,7 @@
     if(isset($_GET["search"])){
         $search = "%".$_GET['search']."%";
 
-        $sql = "SELECT * FROM reizen WHERE name LIKE :search";
+        $sql = "SELECT * FROM reizen WHERE hotel LIKE :search";
             $stmt = $connect -> prepare($sql);
             $stmt -> bindParam(":search", $search);
         } else {

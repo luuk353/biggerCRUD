@@ -421,6 +421,22 @@ html{
     height: 50%;
 }
 
+#form {
+    z-index: 100;
+}
+
+#search{
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+#search-button{
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+
 #formulier {
     display: flex;
     justify-content: space-around;

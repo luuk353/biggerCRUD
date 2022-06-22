@@ -23,7 +23,7 @@
                 <input type="text" id="fname" name="naam" placeholder="Your name..">
 
                 <label for="lname">your email</label>
-                <input type="text" id="lname" name="email" placeholder="Your e-mail">
+                <input type="text" id="lname" name="contactID" placeholder="Your e-mail">
 
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="bericht" placeholder="Write something"style="height:200px"></textarea>

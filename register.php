@@ -10,7 +10,9 @@
 </head>
 <body>
     <main>
-        <?php include ("phpincludes/navbar.php")?>
+        <?php
+        session_start();
+        include ("phpincludes/navbar.php")?>
     <div class="contentblok">
                 <form name ="form" id="formulier-register" action="phpincludes/accountcreation.php" method="post">
                 <P>maak hier uw account aan: </P><br>

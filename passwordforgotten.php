@@ -10,7 +10,9 @@
 </head>
 <body>
     <main>
-        <?php include ("phpincludes/navbar.php")?>
+        <?php
+        session_start();
+        include ("phpincludes/navbar.php")?>
     <div class="contentblok">
                 <form name ="form" id="formulier" action="phpincludes/sendingpassword.php" method="post">
                 <P>vul uw forgotcode in: </P><br>

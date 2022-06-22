@@ -49,11 +49,15 @@
                         $result = $stmt -> fetch();
 
                         if($result){ ?>
-                        <p> <?php echo "Hotelnaam:".ucfirst($result['hotel'])."   |    HotelPrijs".ucfirst($result['hotel_prijs'])."   |   ".ucfirst($result['begindatum'])."   |   ".ucfirst($result['einddatum']);?>     
+                        <b> <?php echo "reisID = ".ucfirst($result['reisID'])."   |   Hotelnaam:".ucfirst($result['hotel'])."   |    HotelPrijs".ucfirst($result['hotel_prijs'])."   |   ".ucfirst($result['begindatum'])."   |   ".ucfirst($result['einddatum']);?> </b> 
                         <?php } 
                 }?>
                     
-                    
+                    <form action="phpincludes/userdelete.php" method="post">
+                <p>vul hier het reisID in van het item dat je wilt annuleren</p>
+                <input type="text" name="reisID" placeholder="reisID">
+                <input type="submit" name="delete">
+            </form>
                 </div>
             </div>
         </div>

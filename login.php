@@ -10,7 +10,9 @@
 </head>
 <body>
     <main>
-        <?php include ("phpincludes/navbar.php")?>
+        <?php 
+        session_start();
+        include ("phpincludes/navbar.php")?>
     <div class="contentblok">
                 <form name ="form" id="login" action="phpincludes/loginvalidate.php" method="post">
                 <P>log hier in: </P><br>

@@ -12,6 +12,7 @@
         foreach($result as $res)  { 
             if($_POST["password"] == $res["password"]) {
                 $_SESSION['gebruikerID'] = $res['gebruikerID'];
+                $_SESSION['username'] = $res['username'];
                 $_SESSION["admin"] = $res["admin"];
                 break;
             }

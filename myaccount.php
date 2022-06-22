@@ -32,25 +32,29 @@
                         <tr>
                             <th>reizen</th>
                         </tr>
-                        <?php 
-                    $sql = "SELECT * FROM boekingen";
-                    $stmt = $connect -> prepare($sql);
-                    $stmt ->execute();
-                    $result = $stmt -> fetchAll();
-
-                    foreach($result as $res) {
-                        echo "<tr>";
-                        echo "<td>".$res["boekingID"]."</td>";
-                        echo "<td>".$res["reisID"]."</td>";
-                        echo "</tr>";
-                    }
-                ?>
                     </table>
+                         
+                    <?php 
+                    $sql = "SELECT * FROM boekingen WHERE gebruikerID =:gebruikerID";
+                    $stmt = $connect -> prepare($sql);
+                    $stmt -> bindParam(":gebruikerID",$_SESSION['gebruikerID']);
+                    $stmt ->execute();
+                    $boekingen = $stmt -> fetchAll();
+
+                    foreach($boekingen as $boeking){
+                        $sql = "SELECT * FROM reizen WHERE reisID = :reisID";
+                        $stmt = $connect -> prepare($sql);
+                        $stmt -> bindParam(":reisID", $boeking["reisID"]);
+                        $stmt -> execute();
+                        $result = $stmt -> fetch();
+
+                        if($result){ ?>
+                        <p> <?php echo "Hotelnaam:".ucfirst($result['hotel'])."   |    HotelPrijs".ucfirst($result['hotel_prijs'])."   |   ".ucfirst($result['begindatum'])."   |   ".ucfirst($result['einddatum']);?>     
+                        <?php } 
+                }?>
+                    
+                    
                 </div>
-
-
-
-
             </div>
         </div>
     </main>

@@ -65,15 +65,15 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
                 <div id="slideshow">
                     <div class="vakantie-blok">
                         <div class="blok1">
-                            <img id="vakantieimg" src="img/vakantie.jpg" alt="">
+                            <img id="vakantieimg" src="img/Australia.jpg" alt="">
                             <div class="vakantietekst">
-                                <p class="tekstvakantie">een mooie vakantie</p>
+                                <p class="tekstvakantie">Australia</p>
                             </div>
                         </div>
                         <div class="blok2">
-                            <img id="vakantieimg2" src="img/glijbaaan.jpg" alt="">
+                            <img id="vakantieimg2" src="img/weetjes-turkije.jpg" alt="">
                             <div class="vakantietekst">
-                                <p class="tekstvakantie">nog een mooie vakantie</p>
+                                <p class="tekstvakantie">turkije</p>
                             </div>
                         </div>
                     </div>
@@ -81,13 +81,13 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
                         <div class="blok1">
                             <img id="vakantieimg" src="img/mooievakantie.png" alt="">
                             <div class="vakantietekst">
-                                <p class="tekstvakantie">een mooie vakantie</p>
+                                <p class="tekstvakantie">turkije</p>
                             </div>
                         </div>
                         <div class="blok2">
                             <img id="vakantieimg2" src="img/spanjepart200.jpg" alt="">
                             <div class="vakantietekst">
-                                <p class="tekstvakantie">nog een mooie vakantie</p>
+                                <p class="tekstvakantie">spanje</p>
                             </div>
                         </div>
                     </div>

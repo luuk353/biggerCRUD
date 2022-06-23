@@ -41,18 +41,6 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] == '0'){
     <main id="main-homepage">
         <div class="navbarfix">
             <?php include ("phpincludes/navbar.php")?>
-            <!-- <div class = "opvulling"></div> -->
-            <?php 
-                                if (isset($_SESSION["rol"])) {
-                                    echo '<li><a href="logout.php">logout</a></li>';
-                                    if ($_SESSION["rol"]=== "admin") {
-                                        echo '<li><a href="admin.php">admin</a></li>';
-                                    }
-                                }
-                                else {
-                                    echo '<li><a href="login.php">Login</a></li>';
-                                } 
-                                ?>
         </div>
         <div class="homepage-blok">
             <div class="searchblok">

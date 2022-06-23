@@ -21,8 +21,9 @@
                 <input type="password" name="password" placeholder="password"><br>
                 <input type="submit" value="submit" name="submit"> <p> nog geen account? klik <a href = "register.php">hier </a> om een account te maken</p><br>
                 <p> wachtwoord vergeten? <a href = "passwordforgotten.php"> hier kunt u uw wachtwoord opnieuw aanvragen! </a> </p>
-                
-    
+            </form>
+            <form name = "form" id = "login" action = "logout.php">
+                <input type = "submit" value= "submit" name = "submit">klik hier om uit te loggen </a>
             </form>
     </div>
 </main>

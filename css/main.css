@@ -456,7 +456,7 @@ html{
 
 }
 #admin-main {
-    height: 90vh;
+    height: 100%;
     background-image: url("../img/PIZZAMAN.jpg");
     display: flex;
     flex-direction: column;
@@ -629,14 +629,14 @@ table {
     width: 100%;
   }s
   
-  td, th {
+  td    , th {
     border: 2px solid rgb(15, 138, 124);
     text-align: center;
     padding: 4px;
 
   }
   
-  tr:nth-child(even) {
+  table:nth-child(even) {
     background-color: rgb(0, 124, 218)
   }
   .myaccount{
@@ -648,4 +648,8 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .boekgebruiker{
+    width: 500px;
+    height: 200px;
   }

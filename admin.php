@@ -10,20 +10,20 @@
 </head>
 
 <body>
-<header>
-<?php
+    <header>
+        <?php
 include_once ("phpincludes/connect.php");
 session_start();
 // if(!$_SESSION["gebruikers"] == 'admin') {
 //     header("Location:admin.php");
 // }
 ?>
-</header>
-<a href = "login.php"> inloggen </a>
-<a href = "contact.php"> contacten </a>
-<a href = "index.php"> indexen</a>
-<a href = "overons.php"> overonsen </a>
-    <main id ="admin-main">
+    </header>
+    <a href="login.php"> inloggen </a>
+    <a href="contact.php"> contacten </a>
+    <a href="index.php"> indexen</a>
+    <a href="overons.php"> overonsen </a>
+    <main id="admin-main">
         <div class="admin-powers">
             <form action="phpincludes/create.php" method="post" id="admin-add">
                 <P>vul hier de naam in van wat je wilt toevoegen </P>
@@ -36,7 +36,7 @@ session_start();
                 <input type="text" name="hotel_prijs" placeholder="prijs"><br>
                 <p> vul de beoordeling in (aantal sterren)</p>
                 <input type="text" name="sterren" placeholder="beoordeling"><br>
-                <input type = "text" name = "image" placeholder = "IMAGELINK"><br>
+                <input type="text" name="image" placeholder="IMAGELINK"><br>
                 <input type="submit" name="submit" placeholder="submit"><br>
             </form>
             <form action="phpincludes/update.php" method="post" id="admin-update">
@@ -52,11 +52,11 @@ session_start();
                 <input type="text" name="hotel_prijs" placeholder="prijs"><br>
                 <p> vul de beoordeling in (aantal sterren)</p>
                 <input type="text" name="sterren" placeholder="beoordeling"><br>
-                <input type = "text" name ="img" placeholder = "IMAGELINK"><br>
+                <input type="text" name="img" placeholder="IMAGELINK"><br>
                 <input type="submit" name="edit" placeholder="edit"><br>
             </form>
-</div>
-<div class = "admin-destroy">
+        </div>
+        <div class="admin-destroy">
             <form action="phpincludes/delete.php" method="post" id="admin-delete">
                 <p>vul hier het ID in van het item dat je wilt deleten</p>
                 <input type="text" name="reisid" placeholder="ID">
@@ -80,6 +80,7 @@ session_start();
             $result = $stmt -> fetchAll();
 
             foreach($result as $res) { 
+                echo "<table>";
                 echo "<tr>";
                 echo "<td>{$res['reisID']}</td>";
                 echo "<td>{$res['hotel']}</td>";
@@ -88,10 +89,37 @@ session_start();
                 echo "<td>{$res['hotel_prijs']}</td>";
                 echo "<td>{$res['sterren']}</td>";
                 echo "</tr>";
+                echo "</table>";
             }
             ?>
-        </div>
-</main>
+                <div class="boekgebruiker">
+                    <h1>boekingen van gebruikers</h1>
+                    <?php
+                          
+                    $sql = "SELECT * FROM boekingen";
+            $stmt = $connect -> prepare($sql);
+            $stmt -> execute();
+            $result = $stmt -> fetchAll();
+
+            foreach($result as $res) { 
+                echo "<tr>";
+                echo "<td>het reisID = {$res['reisID']}</td><br>";
+                echo "<td>van gebruiker= {$res['gebruikerID']}</td><br>";
+                echo "<td> waarvan het boekingID is : {$res['boekingID']}</td><br>";
+                echo "</tr>";
+            }
+
+            ?>
+             <form action="phpincludes/useradmindelete.php" method="post">
+                <p>vul hier het boekingID in van het item dat je wilt annuleren</p>
+                <input type="text" name="boekingID" placeholder="boekingID">
+                <input type="submit" name="delete">
+            </form>
+                </div>
+
+
+
+    </main>
 
 </body>
 

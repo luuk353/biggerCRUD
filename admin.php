@@ -52,7 +52,7 @@ session_start();
                 <input type="text" name="hotel_prijs" placeholder="prijs"><br>
                 <p> vul de beoordeling in (aantal sterren)</p>
                 <input type="text" name="sterren" placeholder="beoordeling"><br>
-                <input type="text" name="img" placeholder="IMAGELINK"><br>
+                <input type="text" name="image" placeholder="IMAGELINK"><br>
                 <input type="submit" name="edit" placeholder="edit"><br>
             </form>
         </div>

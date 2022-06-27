@@ -5,9 +5,9 @@ include_once("connect.php");
 if(isset($_POST["edit"])){  
     $sql = "UPDATE reizen
         SET hotel = :hotel, begindatum = :begindatum, einddatum = :einddatum, hotel_prijs = :hotel_prijs, sterren = :sterren, image = :image
-        WHERE reisid = :reisid";
+        WHERE reisID = :reisID";
     $stmt = $connect->prepare($sql);
-    $stmt->bindParam(":reisid", $_POST["reisid"]);
+    $stmt->bindParam(":reisID", $_POST["reisID"]);
     $stmt->bindParam(":hotel", $_POST["hotel"]);
     $stmt->bindParam(":begindatum", $_POST["begindatum"]);
     $stmt->bindParam(":einddatum", $_POST["einddatum"]);

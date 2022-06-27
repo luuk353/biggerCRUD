@@ -20,7 +20,7 @@
             <div class="searchblok">
                 <div class="searchbar">
 
-                    <form id="form" action="vlutchboeken.php" method="get">
+                    <form id="form" action="vluchtboeken.php" method="get">
                         <input type="search" id="search" name="search" placeholder="Search...">
                         <button type="sumbit" id="search-button">Search</button>
                     </form>

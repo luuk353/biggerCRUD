@@ -20,7 +20,7 @@
             <div class="searchblok">
                 <div class="searchbar">
 
-                    <form id="form" action="vlutchboeken.php" method="get">
+                    <form id="form" action="vluchtboeken.php" method="get">
                         <input type="search" id="search" name="search" placeholder="Search...">
                         <button type="sumbit" id="search-button">Search</button>
                     </form>
@@ -31,7 +31,7 @@
                                     $search = "%".$_GET['search']."%";
 
                                     $sql = "SELECT * FROM reizen WHERE
-                                    hotel LIKE :search";
+                                    hotel OR begindatum OR hotel_prijs OR einddatum OR sterren LIKE :search";
                                     $stmt = $connect -> prepare($sql);
                                     $stmt -> bindParam(":search", $search);
                                     $stmt -> execute();

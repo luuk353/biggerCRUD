@@ -3,7 +3,7 @@
     if(isset($_GET["search"])){
         $search = "%".$_GET['search']."%";
 
-        $sql = "SELECT * FROM reizen WHERE hotel LIKE :search";
+        $sql = "SELECT * FROM reizen WHERE hotel OR begindatum OR hotel_prijs OR einddatum OR sterren LIKE :search";
             $stmt = $connect -> prepare($sql);
             $stmt -> bindParam(":search", $search);
         } else {
@@ -37,6 +37,9 @@
     <div class="tekstvakreistemplate">
     <p>sterren:<p><?php echo $res["sterren"]; ?></p>
     </div>
+    <!-- <div class  = "tekstvakreistemplate">
+    <input type = "checkbox" name = "vervoer"> wilt u vervoer erbij boeken?
+    </div> -->
     <div class="templateboekknop">
         <a href="phpincludes/boeken.php?gebruikerID=<?php echo $_SESSION['gebruikerID']; ?>&reisID=<?php echo $res['reisID']?>" class="buttontemplate">boeken!</a>
         <!-- <button type="submit" name="submit" value="Submit" action="phpincludes/boeken.php" class="buttontemplate">

@@ -2,18 +2,18 @@
     session_start();
     if(isset($_GET["search"])){
         $search = "%".$_GET['search']."%";
-
-        $sql = "SELECT * FROM reizen WHERE hotel OR begindatum OR hotel_prijs OR einddatum OR sterren LIKE :search";
+        $search1 = $_GET['search'];
+        // var_dump($search); 
+            $sql = "SELECT * FROM reizen WHERE :search1 BETWEEN begindatum AND einddatum OR hotel LIKE :search";
             $stmt = $connect -> prepare($sql);
+            $stmt -> bindParam(":search1", $search1);
             $stmt -> bindParam(":search", $search);
+            
         } else {
             $sql = "SELECT * FROM reizen";
             $stmt = $connect -> prepare($sql);
         }
     
-
-    // $sql = "SELECT * FROM menukaart";
-    // $stmt = $connect -> prepare($sql);
     $stmt ->execute();
     $result = $stmt -> fetchAll();
 

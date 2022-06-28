@@ -6,6 +6,7 @@
         $stmt = $connect->prepare($sql);
         $stmt->bindParam(":gebruikerID", $_GET["gebruikerID"]);
         $stmt->bindParam(":reisID", $_GET["reisID"]);
+        // $stmt -> bindParam(":vervoer", $_GET["vervoer"]);
         $stmt->execute();
     
         header("Location:../vluchtboeken.php");

@@ -39,26 +39,28 @@
     <div class="tekstvakreistemplate">
         <p>sterren:<p><?php echo $res["sterren"]; ?></p>
     </div>
-    <div class="tekstvakreistemplate">    
-    <form action= "phpincludes/boeken.php" method="post">
-            <select name="car">
-                <option value=""> select a car to hire</option>
-                <option value="audi"> audi</option>
-                <option value="vw"> Volkswagen</option>
-                <option value="mercedes"> mercedes</option>
+    <div class="form-template">    
+    <form id="form-template"action= "phpincludes/boeken.php" method="post">
+            <select id="select-form-template" name="car">
+                <option id="select-form-template" value=""> select car</option>
+                <option id="select-form-template" value="audi"> audi</option>
+                <option id="select-form-template" value="vw"> Volkswagen</option>
+                <option id="select-form-template" value="mercedes"> mercedes</option>
             </select>
-            <select name="hotel">
-                <option value=""> select a hotel to stay at</option>
+            <select id="select-form-template" name="hotel">
+                <option value=""> select a hotel</option>
                 <option value="turk"> Grand hotel Turkey</option>
                 <option value="sp"> Grand hotel Spain/Portugal</option>
                 <option value="au"> Grand hotel Australia</option>
             </select>
 
 
-
+            
             <input type="hidden" name="gebruikerID" value=<?php echo $_SESSION['gebruikerID']; ?>>
             <input type="hidden" name="reisID" value=<?php echo $res['reisID']; ?>>
-            <input type="submit" value="submit">
+            <div class="knop-form-template">
+                <input type="submit" value="submit">
+            </div>
         </form>
     </div>
 </div>

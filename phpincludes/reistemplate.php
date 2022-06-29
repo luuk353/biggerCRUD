@@ -61,6 +61,26 @@
             <div class="knop-form-template">
                 <input type="submit" value="submit">
             </div>
+
+    <div class="tekstvakreistemplate">    
+        <form action= "phpincludes/boeken.php" method="post">
+            <select name="car">
+                <option value="default">Select a car to hire</option>
+                <option value="audi">Audi</option>
+                <option value="vw">Volkswagen</option>
+                <option value="mercedes">Mercedes</option>
+            </select>
+            <select name="hotel">
+                <option value="default">Select a hotel to stay at</option>
+                <option value="turk">Grand hotel Turkey</option>
+                <option value="sp">Grand hotel Spain/Portugal</option>
+                <option value="au">Grand hotel Australia</option>
+            </select>
+            
+            <input type="hidden" name="gebruikerID" value=<?php echo $_SESSION['gebruikerID']; ?>>
+            <input type="hidden" name="reisID" value=<?php echo $res['reisID']; ?>>
+
+            <input type="submit" name="boeken" value="submit">
         </form>
     </div>
 </div>

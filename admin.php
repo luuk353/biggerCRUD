@@ -168,6 +168,13 @@ session_start();
                         echo "</table>";
             }
             ?>
+             <div class = "useradmindelete">
+                <form action="phpincludes/userdeletion.php" method="post">
+                    <b>vul hier het gebruikersID in van het account dat je wilt verwijderen</b>
+                    <input type="text" name="gebruikerID" placeholder="gebruikerID">
+                    <input type="submit" name="delete">
+                </form>
+            </div>
                 </div>
              </div>
         </div>

@@ -31,7 +31,7 @@
                                     $search = "%".$_GET['search']."%";
 
                                     $sql = "SELECT * FROM reizen WHERE
-                                    hotel LIKE :search";
+                                    hotel OR begindatum OR hotel_prijs OR einddatum OR sterren LIKE :search";
                                     $stmt = $connect -> prepare($sql);
                                     $stmt -> bindParam(":search", $search);
                                     $stmt -> execute();

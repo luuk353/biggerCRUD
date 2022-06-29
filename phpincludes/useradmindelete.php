@@ -1,4 +1,4 @@
-<?php
+        <?php
 include_once ("connect.php");
 if(isset($_POST["delete"])) {
         $sql = "DELETE FROM boekingen   

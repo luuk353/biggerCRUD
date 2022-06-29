@@ -134,13 +134,12 @@ session_start();
                     <form action="phpincludes/accountupdate.php" method="post" id="admin-update">
                         <p>vul hier het ID in van de gebruiker die je wilt aanpassen</p>
                         <input type="text" name="gebruikerID" placeholder="ID">
-                        <P>vul hier de naam in </P>
+                        <P>vul hier de nieuwe naam in </P>
                         <input type="text" name="username" placeholder="username"><br>
-                        <p>vul de begindatum in</p>
+                        <p>vul hier het nieuwe wachtwoord in</p>
                         <input type="text" name="password" placeholder="password"><br>
-                        <p> vul de einddatum in</p>
+                        <p> vul de nieuwe code in</p>
                         <input type="text" name="forgotcode" placeholder="forgotcode"><br>
-                        <p> geef de prijs aan </p>
                         <input type="submit" name="edit" placeholder="edit"><br>
                     </form>
                     <?php
